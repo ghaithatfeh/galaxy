@@ -93,10 +93,13 @@ p {
   z-index: -1;
   width: 100%;
 }
-
+@media (max-width: 375px) and (min-height: 812px) {
+  .intro-img {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 992px) {
   .intro-img {
-    margin-top: 80px;
     left: 0;
   }
   .landing .bottom .contact-icone {
