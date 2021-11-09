@@ -22,10 +22,28 @@
 </head>
 
 <body>
+    <div class="sidebar">
+        <img class="close-btn" src="images/header/close-btn.svg" alt="">
+        <div id="sidebar" class="sidebar-container">
+            <img src="images/header/Logo.svg" alt="">
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Products</li>
+                <li>Contact us</li>
+                <li>Order</li>
+            </ul>
+            <div>
+                <img src="images/header/trach.svg" alt="">
+                <img src="images/header/person.svg" alt="">
+            </div>
+        </div>
+    </div>
+
     <!-- start header -->
-    <div class="nav-bar navbar-fixed-top">
+    <div class="nav-bar">
         <div class="container">
-            <div class="nav-bar row">
+            <div class="row">
                 <div class="icone col-md-2 col-xs-4">
                     <a href="" class="col-xs-6">
                         <img class="img-responsive" src="images/header/trach.svg" alt="">
@@ -38,9 +56,9 @@
                     <img class="img-responsive center-block" src="images/header/Logo.svg">
                 </div>
                 <div class="col-md-offset-2 col-md-2 col-xs-4">
-                    <a href="" class="col-md-offset-6 col-md-6 col-xs-offset-6 col-xs-6">
-                        <img class="img-responsive" src="images/header/borger.svg" alt="">
-                    </a>
+                    <div href="" class="col-md-offset-6 col-md-6 col-xs-offset-6 col-xs-6">
+                        <img id="borger" class="img-responsive" src="images/header/borger.svg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="nav-bar-links hidden-md hidden-sm hidden-xs">
@@ -288,12 +306,22 @@
 
 
 
-
-
-
     <!-- script links -->
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script>
+        const borger = document.querySelector('#borger');
+        const sidebar = document.querySelector('#sidebar');
+        const closeBtn = document.querySelector('.close-btn');
+        borger.onclick = () => {
+            sidebar.style.display = 'flex';
+            closeBtn.style.display = 'unset';
+        };
+        closeBtn.onclick = () => {
+            sidebar.style.display = 'none';
+            closeBtn.style.display = 'none';
+        };
+    </script>
+    <!-- <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
