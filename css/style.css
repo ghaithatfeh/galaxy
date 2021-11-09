@@ -296,7 +296,10 @@ p {
   color: #fff;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.ep span{
+  padding: 0 5px;
 }
 @media (max-width: 1024px) {
   .lable * {
@@ -319,9 +322,9 @@ p {
   margin-top: -5px;
   position: relative;
   background-image: url(../images/footer/background.svg);
-  background-size: 85vw;
+  background-size: 55vw;
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: 130px;
 }
 @media(max-width: 1200px){
   .footer{
@@ -340,8 +343,6 @@ p {
 }
 .footer > img {
   width: 100%;
-}
-.footer > img:first-child {
   position: relative;
   z-index: -1;
 }
@@ -360,14 +361,17 @@ p {
 }
 .links a{
   margin: 1vmin auto;
-  font-size: 3vmin;
+  font-size: 2vmin;
   color: #7d5a50;
   text-decoration: none;
+}
+.contact-links{
+  padding-right: 0;
 }
 .contact-links > div{
   margin: 2vmin auto;
   color: #7d5a50;
-  font-size: 3vmin;
+  font-size: 2vmin;
   font-weight: 300;
 }
 .contact-links img{
