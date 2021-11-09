@@ -179,31 +179,14 @@ p {
   background-position-y: center;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 400px;
-  padding-bottom: 100px;
+  padding-top: 16vw;
+  padding-bottom: 9vmin;
+  margin-top: -1px;
 }
 @media (max-width: 1024px) {
   .product {
     background-image: url(../images/product/background-sm.svg);
     background-size: 100%;
-  }
-}
-@media (min-width: 1500px) {
-  .product {
-    padding-top: 500px;
-    padding-bottom: 200px;
-  }
-}
-@media (max-width: 992px) {
-  .product {
-    padding-top: 120px;
-    padding-bottom: 30px;
-  }
-}
-@media (max-width: 500px) {
-  .product {
-    padding-top: 75px;
-    padding-bottom: 30px;
   }
 }
 .product > img:first-child {
@@ -225,15 +208,16 @@ p {
   text-align: center;
 }
 .product .container .cards-container .card {
-  margin-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 4vmin;
+  padding-bottom: 4vmin;
   border-radius: 2vw;
   background: rgb(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 19px 0px rgb(0, 0, 0, 0.1);
 }
 .product .container .cards-container .card h3 {
-  font-size: 1.5vw;
+  width: 100%;
+  font-size: 1vw;
   margin-bottom: 0;
   font-weight: bold;
   color: #7d5a50;
@@ -241,23 +225,14 @@ p {
 }
 
 .product .container .cards-container .card input {
-  font-family: "Roboto";
   margin-top: 1vw;
-  font-size: 1vw;
+  font-size: 2vmin;
   color: var(--second-color);
   padding: 2%;
   border-radius: 2vw;
   border: 0;
   background-color: #fff;
   box-shadow: -4px 4px 0 0 #7d5a50;
-}
-@media (min-width: 1200px) {
-  .product .container .cards-container .card h3 {
-    font-size: 1vw;
-  }
-  .product .container .cards-container .card input {
-    font-size: 1vw;
-  }
 }
 .arrows {
   margin: 40px 0;
@@ -270,3 +245,145 @@ p {
   z-index: -1;
 }
 /* end product */
+
+/* start contuct */
+.contact {
+  background-color: #7d5a50;
+  margin-top: -5px;
+  padding-top: 9vmin;
+  padding-bottom: 9vmin;
+  position: relative;
+}
+.contact h3 {
+  font-family: "Merienda";
+  font-size: 5vmin;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.lable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 630px;
+}
+.lable * {
+  font-size: 1vw;
+}
+.lable > *:not(.ep):not(textarea):not(h3) {
+  width: 100%;
+  color: #fff;
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 1vw;
+  opacity: 0.8;
+}
+::placeholder {
+  color: #fff;
+}
+.contact textarea {
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #fff;
+  opacity: 0.8;
+}
+.ep {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .lable * {
+    font-size: 2vw;
+  }
+  .lable > *:not(.ep):not(textarea) {
+    padding: 2vw;
+  }
+}
+.contact > img:last-child {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+}
+/* end contact */
+
+/* start footer */
+.footer {
+  margin-top: -5px;
+  position: relative;
+  background-image: url(../images/footer/background.svg);
+  background-size: 85vw;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+@media(max-width: 1200px){
+  .footer{
+    background: unset;
+  }
+}
+.footer .container{
+  padding-top: 5vh;
+}
+.footer .row{
+  display: flex;
+  justify-content: space-around;
+}
+.footer .logo{
+  align-self: center;
+}
+.footer > img {
+  width: 100%;
+}
+.footer > img:first-child {
+  position: relative;
+  z-index: -1;
+}
+.footer .logo div a img{
+  margin-top: 4vh;
+  padding: 0 1vmin;
+  width: 100%;
+}
+.footer .logo .cont{
+  display: flex;
+  justify-content: center;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  float: unset;
+}
+.links a{
+  margin: 1vmin auto;
+  font-size: 3vmin;
+  color: #7d5a50;
+  text-decoration: none;
+}
+.contact-links > div{
+  margin: 2vmin auto;
+  color: #7d5a50;
+  font-size: 3vmin;
+  font-weight: 300;
+}
+.contact-links img{
+  width: 6%;
+}
+.contact-links span{
+  margin-left: 10px;
+}
+.footer > span {
+  font-size: 2vmin;
+  font-weight: 100;
+  color: #fff;
+  position: absolute;
+  bottom: 2vmin;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+/* end footer */
