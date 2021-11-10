@@ -24,7 +24,7 @@ p {
 /* end global rules */
 
 /* satrt sidebar */
-.sidebar{
+.sidebar {
   display: none;
   position: fixed;
   top: 0;
@@ -73,6 +73,24 @@ p {
 /* end sidebar */
 
 /* start header */
+.home-coockie{
+  position: absolute;
+  width: 30%;
+  top: 0;
+  left: 0;
+}
+.order-coockie{
+  position: absolute;
+  width: 30%;
+  right: -10%;
+  top: -90%;
+}
+.order-coockie-center{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  width: 20%;
+}
 .nav-bar {
   position: fixed;
   width: 100%;
@@ -105,8 +123,8 @@ p {
 
 /* start landing */
 .landing {
+  padding-top: 14%;
   height: 100vh;
-  padding-top: 15%;
 }
 .intro-img {
   position: absolute;
@@ -238,21 +256,27 @@ p {
   padding-bottom: 9vmin;
   margin-top: -1px;
 }
+.oreder-product {
+  background-image: none;
+}
+@media (min-width: 1400px) {
+  .oreder-product {
+    padding-top: 11vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .product {
     background-image: url(../images/product/background-sm.svg);
     background-size: 100%;
   }
 }
-.product > img:first-child {
+.product > .img-top {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: -1;
-}
-.product > img:first-child {
-  width: 100%;
 }
 .product > img:last-child {
   width: 100%;
@@ -325,14 +349,25 @@ p {
 .lable * {
   font-size: 1vw;
 }
-.lable > *:not(.ep):not(textarea):not(h3) {
+.lable > select,
+input[type="email"] {
   width: 100%;
   color: #fff;
-  width: 100%;
   margin: 15px 0;
   border: 1px solid #fff;
   background-color: transparent;
   padding: 1vw;
+  opacity: 0.8;
+}
+.lable input[type="button"] {
+  width: 100%;
+  color: #7d5a50;
+  background-color: #fcdec0;
+  font-weight: bold;
+  padding: 1vw;
+  margin: 15px 0;
+  border: 0;
+  border-radius: 1vmin;
   opacity: 0.8;
 }
 ::placeholder {
@@ -380,6 +415,9 @@ p {
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position-x: 130px;
+}
+.order-fotter {
+  background-image: none;
 }
 @media (max-width: 1200px) {
   .footer {
