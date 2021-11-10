@@ -24,14 +24,18 @@ p {
 /* end global rules */
 
 /* satrt sidebar */
-.sidebar-container {
-  display: none;
+.sidebar{
+  /* display: none; */
   position: fixed;
   top: 0;
   z-index: 10;
   background-color: #f4ede5;
   height: 100vh;
   width: 100%;
+}
+.sidebar-container {
+  height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -60,12 +64,11 @@ p {
 .sidebar-container > div:last-child img {
   width: 40%;
 }
+
 .close-btn {
-  position: fixed;
-  display: none;
+  position: absolute;
   top: 15%;
   right: 15%;
-  z-index: 20;
 }
 /* end sidebar */
 

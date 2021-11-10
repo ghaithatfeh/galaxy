@@ -24,7 +24,7 @@
 <body>
     <div class="sidebar">
         <img class="close-btn" src="images/header/close-btn.svg" alt="">
-        <div id="sidebar" class="sidebar-container">
+        <div class="sidebar-container row">
             <img src="images/header/Logo.svg" alt="">
             <ul>
                 <li>Home</li>
@@ -309,15 +309,13 @@
     <!-- script links -->
     <script>
         const borger = document.querySelector('#borger');
-        const sidebar = document.querySelector('#sidebar');
+        const sidebar = document.querySelector('.sidebar');
         const closeBtn = document.querySelector('.close-btn');
         borger.onclick = () => {
-            sidebar.style.display = 'flex';
-            closeBtn.style.display = 'unset';
+            sidebar.style.display = 'unset';
         };
         closeBtn.onclick = () => {
             sidebar.style.display = 'none';
-            closeBtn.style.display = 'none';
         };
     </script>
     <!-- <script src="js/jquery-1.11.1.min.js"></script>
