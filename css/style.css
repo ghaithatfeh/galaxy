@@ -1,4 +1,7 @@
 /* star global rules */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fcdec0;
@@ -77,19 +80,19 @@ p {
 /* end sidebar */
 
 /* start header */
-.home-coockie{
+.home-coockie {
   position: absolute;
   width: 30%;
   top: 0;
   left: 0;
 }
-.order-coockie{
+.order-coockie {
   position: absolute;
   width: 30%;
   right: -10%;
   top: -90%;
 }
-.order-coockie-center{
+.order-coockie-center {
   position: fixed;
   left: 0;
   top: 50%;
@@ -163,12 +166,6 @@ p {
 .landing .bottom > img {
   width: 100%;
 }
-.bottum-img {
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-  width: 100%;
-}
 @media (max-width: 375px) and (min-height: 812px) {
   .intro-img {
     margin-top: 50px;
@@ -211,7 +208,6 @@ p {
   width: 30%;
   position: absolute;
   left: 0;
-  z-index: 1;
 }
 .about .text {
   max-width: 600px;
@@ -248,8 +244,8 @@ p {
 }
 /* end about */
 
-/* start product */
-.product {
+/* start products */
+.products {
   background-image: url(../images/product/background.svg);
   background-position-x: center;
   background-position-y: center;
@@ -270,27 +266,27 @@ p {
 }
 
 @media (max-width: 1024px) {
-  .product {
+  .products {
     background-image: url(../images/product/background-sm.svg);
     background-size: 100%;
   }
 }
-.product > .img-top {
+.products > .img-top {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: -1;
 }
-.product > img:last-child {
+.products > img:last-child {
   width: 100%;
   margin-top: -200px;
 }
-.product .container h1 {
+.products .container h1 {
   color: #68361d;
   text-align: center;
 }
-.product .container .cards-container .card {
+.products .container .cards-container .card {
   margin-top: 4vmin;
   padding-bottom: 4vmin;
   border-radius: 2vw;
@@ -298,7 +294,7 @@ p {
   backdrop-filter: blur(10px);
   box-shadow: 0 0 19px 0px rgb(0, 0, 0, 0.1);
 }
-.product .container .cards-container .card h3 {
+.products .container .cards-container .card h3 {
   width: 100%;
   font-size: 1vw;
   margin-bottom: 0;
@@ -307,7 +303,7 @@ p {
   text-align: center;
 }
 
-.product .container .cards-container .card input {
+.products .container .cards-container .card input {
   margin-top: 1vw;
   font-size: 2vmin;
   color: var(--second-color);
@@ -320,14 +316,14 @@ p {
 .arrows {
   margin: 40px 0;
 }
-.product > img:last-child {
+.products > img:last-child {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: -1;
 }
-/* end product */
+/* end products */
 
 /* start contuct */
 .contact {
@@ -459,6 +455,7 @@ input[type="email"] {
 .links a {
   margin: 1vmin auto;
   font-size: 2vmin;
+  font-weight: bold;
   color: #7d5a50;
   text-decoration: none;
 }
@@ -488,3 +485,78 @@ input[type="email"] {
   width: 100%;
 }
 /* end footer */
+
+/* start card */
+.card-page {
+  padding-top: 15%;
+}
+.card-page h1 {
+  text-align: center;
+  color: #683309;
+  font-weight: bold;
+}
+.card-page h2,
+h3 {
+  color: #683309;
+  font-weight: bold;
+}
+.card-page .card-container .cards {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-page .card-container .card {
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1vmin;
+  background: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px 0px rgb(0, 0, 0, 0.1);
+}
+.card-page .card-container .card img {
+  margin-top: 30px;
+}
+.card-page .card-container .card span {
+  /* margin-top: 20px;
+  font-size: 1vw;
+  font-weight: bold; */
+}
+.card-page .card-container .card input[type="button"] {
+  margin-top: 1vw;
+  font-size: 2vmin;
+  color: var(--second-color);
+  padding: 2%;
+  border-radius: 2vw;
+  border: 0;
+  background-color: #fff;
+  box-shadow: -4px 4px 0 0 #7d5a50;
+}
+.card-page .card-container .card input[type="button"]:hover {
+  cursor: inherit;
+}
+.card-page .card-container .summary {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1vmin;
+  background: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px 0px rgb(0, 0, 0, 0.1);
+}
+.card-page .card-container .summary .datil {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-page .card-container .summary .total {
+  justify-self: flex-end;
+}

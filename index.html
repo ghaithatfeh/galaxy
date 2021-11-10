@@ -28,10 +28,10 @@
         <div class="sidebar-container row">
             <img src="images/header/Logo.svg" alt="">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href=""></a>About us</a></li>
-                <li><a href=""></a>Products</a></li>
-                <li><a href=""></a>Contact us</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact us</a></li>
                 <li><a href="order.html">Order</a></li>
             </ul>
             <div>
@@ -66,10 +66,10 @@
             </div>
             <div class="nav-bar-links hidden-md hidden-sm hidden-xs">
                 <ul class="nav navbar-nav pagination-lg">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Product</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                     <li><a href="order.html">Order</a></li>
                 </ul>
             </div>
@@ -110,13 +110,12 @@
                     </a>
                 </div>
             </div>
-            <!-- <img class="bottum-img" src="images/landing/bottom.svg" alt=""> -->
         </div>
     </div>
     <!-- end landing -->
 
     <!-- about us -->
-    <div class="about">
+    <div id="about" class="about">
         <img class="img-responsive center-block hidden-md hidden-sm hidden-xs biscuit-lg" src="images/about/biscuit.svg"
             alt="">
         <div class="container">
@@ -136,7 +135,7 @@
     <!-- end about us -->
 
     <!-- start product -->
-    <div class="product">
+    <div id="products" class="products">
         <img class="img-top" src="images/product/top.svg" alt="">
         <div class="container">
             <h1 class="row">Our Product</h1>
@@ -233,7 +232,7 @@
     <!-- end product -->
 
     <!-- start contact -->
-    <div class="contact">
+    <div id='contact' class="contact">
         <div class="container">
             <div class="lable col-lg-5 col-lg-offset-0 col-xs-8 col-xs-offset-2">
                 <h3>Contact Us</h3>
@@ -278,16 +277,16 @@
                     </div>
                 </div>
                 <div class="links col-lg-offset-1 col-lg-2 hidden-md hidden-sm hidden-xs">
-                    <a class="col-xs-12" href="#home">Home</a>
-                    <a class="col-xs-12" href="#About">About Us</a>
-                    <a class="col-xs-12" href="">Oreder</a>
+                    <a class="col-xs-12" href="#top">Home</a>
+                    <a class="col-xs-12" href="#about">About Us</a>
+                    <a class="col-xs-12" href="order.html">Oreder</a>
                 </div>
                 <div class="links col-lg-2 hidden-md hidden-sm hidden-xs">
-                    <a class="col-xs-12" href="#Products">Products</a>
-                    <a class="col-xs-12" href="#Contact">Contact Us</a>
+                    <a class="col-xs-12" href="#products">Products</a>
+                    <a class="col-xs-12" href="#contact">Contact Us</a>
                 </div>
                 <div class="contact-links links col-lg-4 col-md-4 col-sm-6 col-xs-7">
-                    <a href="">Contact</a>
+                    <a>Contact</a>
                     <div class="location">
                         <img src="images/footer/location.svg" alt="">
                         <span class="">15 - street - city - country</span>
@@ -315,12 +314,20 @@
         const borger = document.querySelector('#borger');
         const sidebar = document.querySelector('.sidebar');
         const closeBtn = document.querySelector('.close-btn');
+        const aLinks = document.querySelectorAll('.nav a');
         borger.onclick = () => {
             sidebar.style.display = 'unset';
         };
         closeBtn.onclick = () => {
             sidebar.style.display = 'none';
         };
+        // console.log(aLinks);
+        // aLinks.forEach(a => {
+        //     a.onclick = () => {
+        //         sidebar.style.display = 'none';
+        //         console.log('gh');
+        //     };
+        // });
     </script>
     <!-- <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script> -->
