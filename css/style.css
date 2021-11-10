@@ -105,8 +105,8 @@ p {
 
 /* start landing */
 .landing {
-  height: calc(100vh - 35px);
-  padding-top: 12%;
+  height: 100vh;
+  padding-top: 15%;
 }
 .intro-img {
   position: absolute;
