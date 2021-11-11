@@ -314,6 +314,7 @@
         const borger = document.querySelector('#borger');
         const sidebar = document.querySelector('.sidebar');
         const closeBtn = document.querySelector('.close-btn');
+        const ulSideBar = document.querySelector('.sidebar ul');
         const aLinks = document.querySelectorAll('.nav a');
         borger.onclick = () => {
             sidebar.style.display = 'unset';
@@ -321,13 +322,9 @@
         closeBtn.onclick = () => {
             sidebar.style.display = 'none';
         };
-        // console.log(aLinks);
-        // aLinks.forEach(a => {
-        //     a.onclick = () => {
-        //         sidebar.style.display = 'none';
-        //         console.log('gh');
-        //     };
-        // });
+        ulSideBar.onclick = () => {
+            sidebar.style.display = 'none';
+        }
     </script>
     <!-- <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script> -->
