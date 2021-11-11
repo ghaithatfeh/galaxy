@@ -6,6 +6,16 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fcdec0;
   margin: 0;
+  background-image: url(../images/lines.svg);
+  background-repeat: repeat-y;
+  background-position-x: 10%;
+  background-size: 15%;
+}
+@media (min-width: 1500px) {
+  body {
+    background-position-x: 20vw;
+    background-size: unset;
+  }
 }
 h1 {
   font: bold 3vw "Merienda";
@@ -113,6 +123,16 @@ p {
   z-index: 1;
   padding-top: 1%;
   background-color: #fcdec0;
+  background-image: url(../images/lines.svg);
+  background-repeat: repeat-y;
+  background-position-x: 10%;
+  background-size: 15%;
+}
+@media (min-width: 1500px) {
+  .nav-bar {
+    background-position-x: 20vw;
+    background-size: unset;
+  }
 }
 .nav-bar .container .row {
   display: flex;
@@ -140,6 +160,7 @@ p {
 .landing {
   padding-top: 14%;
   height: 100vh;
+  position: relative;
 }
 .intro-img {
   position: absolute;
@@ -303,15 +324,15 @@ p {
 }
 .products .container .cards-container .card h3 {
   width: 100%;
-  font-size: 1vw;
+  font-size: calc(1vw + 5px);
+  padding: 0;
   margin-bottom: 0;
   font-weight: bold;
   color: #7d5a50;
   text-align: center;
 }
-
 .products .container .cards-container .card input {
-  margin-top: 1vw;
+  margin-top: calc(1vw + 5px);
   font-size: 2vmin;
   color: var(--second-color);
   padding: 2%;
@@ -587,13 +608,16 @@ input[type="email"] {
   backdrop-filter: blur(10px);
   box-shadow: 0 0 6px 0px rgb(0, 0, 0, 0.1);
 }
+.card-page .card-container .summary span {
+  font-size: 2vmin;
+}
 @media (max-width: 1200px) {
   .card-page .card-container .summary {
     margin-top: 7vw;
   }
-}
-.card-page .card-container .summary span {
-  font-size: 3vmin;
+  .card-page .card-container .summary span {
+    font-size: calc(2vmin + 5px);
+  }
 }
 .card-page .card-container .summary .datils {
   position: relative;
@@ -626,8 +650,8 @@ input[type="email"] {
   background-color: #7d5a50;
 }
 .card-page .card-container .summary input {
-  margin: 3vw 0 1vw;
-  font-size: 3vmin;
+  margin: 2vw 0 1vw;
+  font-size: calc(2vmin + 5px);
   font-weight: bold;
   color: var(--second-color);
   padding: 3% 7%;
