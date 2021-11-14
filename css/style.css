@@ -150,7 +150,7 @@ p {
   color: #7d5a50;
 }
 .nav.navbar-nav.pagination-lg a {
-  margin: 10px 25px;
+  margin: 10px 20px 5px;
 }
 @media (max-width: 1200px) {
   .nav-bar {
@@ -677,9 +677,14 @@ input[type="email"] {
 
 /* start product-page */
 .product-page {
-  padding-top: 16vw;
+  padding-top: 12vw;
   padding-bottom: 9vmin;
   color: #7d5a50;
+}
+@media (max-width: 600px){
+  .product-page {
+  padding-top: 16vw;
+  }
 }
 .product-page h2 {
   font-weight: bolder;
