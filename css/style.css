@@ -6,13 +6,15 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fcdec0;
   margin: 0;
+}
+.home-body{
   background-image: url(../images/lines.svg);
   background-repeat: repeat-y;
   background-position-x: 10%;
   background-size: 15%;
 }
 @media (min-width: 1500px) {
-  body {
+  .home-body {
     background-position-x: 20vw;
     background-size: unset;
   }
@@ -123,13 +125,15 @@ p {
   z-index: 1;
   padding-top: 1%;
   background-color: #fcdec0;
+}
+.home-body .nav-bar{
   background-image: url(../images/lines.svg);
   background-repeat: repeat-y;
   background-position-x: 10%;
   background-size: 15%;
 }
 @media (min-width: 1500px) {
-  .nav-bar {
+  .home-body .nav-bar {
     background-position-x: 20vw;
     background-size: unset;
   }
@@ -332,17 +336,23 @@ p {
   text-align: center;
 }
 .special-btn {
+  color: #7d5a50;
+  text-align: center;
   margin-top: calc(1vw + 5px);
   font-size: 2vmin;
+  font-weight: bold;
   padding: 2%;
   border-radius: 2vw;
   border: 0;
   background-color: #fff;
   box-shadow: -4px 4px 0 0 #7d5a50;
 }
+a.special-btn:hover {
+  color: #683310;
+}
 @media (max-width: 600px) {
   .special-btn {
-    font-size: 3vmin;
+    font-size: calc(2vmin + 1px);
   }
 }
 .arrows {
@@ -707,7 +717,7 @@ input[type="email"] {
   font-weight: 300;
   color: #fff;
 }
-.special-btn-sm{
+.special-btn-sm {
   margin-top: 6vh;
 }
 select.special-btn {
@@ -715,7 +725,7 @@ select.special-btn {
   font-weight: bolder;
 }
 select.special-btn * {
-  font-weight: bolder;
+  text-align: left;
 }
 .product-page .quantity span {
   margin-top: calc(1vw + 5px);
@@ -729,6 +739,9 @@ select.special-btn * {
   text-align: center;
 }
 @media (max-width: 600px) {
+  .product-page .special-btn {
+    font-size: 3vmin;
+  }
   .product-page .quantity .special-btn {
     padding-top: 4%;
     padding-bottom: 4%;
