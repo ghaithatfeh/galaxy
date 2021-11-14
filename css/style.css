@@ -331,15 +331,19 @@ p {
   color: #7d5a50;
   text-align: center;
 }
-.products .container .cards-container .card input {
+.special-btn {
   margin-top: calc(1vw + 5px);
   font-size: 2vmin;
-  color: var(--second-color);
   padding: 2%;
   border-radius: 2vw;
   border: 0;
   background-color: #fff;
   box-shadow: -4px 4px 0 0 #7d5a50;
+}
+@media (max-width: 600px) {
+  .special-btn {
+    font-size: 3vmin;
+  }
 }
 .arrows {
   margin: 40px 0;
@@ -558,7 +562,7 @@ input[type="email"] {
   opacity: 0.7;
   cursor: inherit;
 }
-.card-page .card-container .card {
+.card {
   margin: 1vw 0;
   padding: 0 20px 20px;
   display: flex;
@@ -653,7 +657,6 @@ input[type="email"] {
   margin: 2vw 0 1vw;
   font-size: calc(2vmin + 5px);
   font-weight: bold;
-  color: var(--second-color);
   padding: 3% 7%;
   border-radius: 3vw;
   border: 0;
@@ -661,3 +664,81 @@ input[type="email"] {
   box-shadow: -4px 4px 0 0 #7d5a50;
 }
 /* summary //////////////////////*/
+
+/* start product-page */
+.product-page {
+  padding-top: 16vw;
+  padding-bottom: 9vmin;
+  color: #7d5a50;
+}
+.product-page h2 {
+  font-weight: bolder;
+}
+.product-page h4 {
+  font-size: 4vmin;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+.product-page .my-para {
+  margin-top: 10px;
+  max-width: 85%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+}
+.product-page .my-para-sm {
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+.product-page button {
+  text-align: center;
+  font-weight: bolder;
+}
+.product-page .card {
+  padding: 45px 20px;
+}
+.product-page .card-sm {
+  padding: 20px 0;
+}
+.product-page .select {
+  font-size: 1vw;
+  font-weight: 300;
+  color: #fff;
+}
+.special-btn-sm{
+  margin-top: 6vh;
+}
+select.special-btn {
+  margin-top: 0;
+  font-weight: bolder;
+}
+select.special-btn * {
+  font-weight: bolder;
+}
+.product-page .quantity span {
+  margin-top: calc(1vw + 5px);
+  font-size: 2vmin;
+  font-weight: bolder;
+  padding: 2%;
+  border-radius: 2vw;
+  border: 0;
+  background-color: #fff;
+  box-shadow: -4px 4px 0 0 #7d5a50;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .product-page .quantity .special-btn {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .product-page .quantity span {
+    font-size: 3vmin;
+    padding: 4% 2%;
+  }
+  .product-page .select {
+    font-size: 2vmin;
+  }
+}
+/* end product-page */
