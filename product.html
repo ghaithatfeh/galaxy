@@ -109,9 +109,9 @@
                     </div>
                     <div class="quantity col-lg-6">
                         <h2>QUANTITY</h2>
-                        <button class="special-btn col-xs-1">-</button>
-                        <span class="col-xs-offset-1 col-xs-1">1</span>
-                        <button class="special-btn col-xs-offset-1 col-xs-1">+</button>
+                        <button id="minus" class="special-btn col-xs-1">-</button>
+                        <span id="count" class="col-xs-offset-1 col-xs-1">1</span>
+                        <button id="plus" class="special-btn col-xs-offset-1 col-xs-1">+</button>
                     </div>
                 </div>
             </div>
@@ -136,15 +136,17 @@
                     </div>
                     <div class="quantity col-xs-12" style="margin-top: 3vh;">
                         <h4>QUANTITY</h4>
-                        <button class="special-btn col-xs-2 col-sm-1">-</button>
-                        <span class="col-xs-offset-2 col-xs-2 col-sm-1 col-sm-offset-1">1</span>
-                        <button class="special-btn col-xs-offset-2 col-xs-2 col-sm-1 col-sm-offset-1">+</button>
+                        <button id="minus" class="special-btn col-xs-2 col-sm-1">-</button>
+                        <span id="count" class="col-xs-offset-2 col-xs-2 col-sm-1 col-sm-offset-1">1</span>
+                        <button id="plus"
+                            class="special-btn col-xs-offset-2 col-xs-2 col-sm-1 col-sm-offset-1">+</button>
                     </div>
                 </div>
             </div>
             <div class="col-xs-12">
                 <h4 style="margin-top: 20px;">Ingredient</h4>
-                <p class="my-para-sm lead">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or
+                <p class="my-para-sm lead">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
+                    out print, graphic or
                     web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought
                     to have scrambled parts</p>
                 <button class="special-btn special-btn-sm col-xs-4 col-xs-offset-4">Order</button>
@@ -206,6 +208,7 @@
 
     <!-- script links -->
     <script>
+        // sidebar
         const borger = document.querySelector('#borger');
         const sidebar = document.querySelector('.sidebar');
         const closeBtn = document.querySelector('.close-btn');
@@ -215,6 +218,31 @@
         closeBtn.onclick = () => {
             sidebar.style.display = 'none';
         };
+
+        // quantity
+        const minus = document.querySelectorAll('#minus');
+        const plus = document.querySelectorAll('#plus');
+        const count = document.querySelectorAll('#count');
+        let prevCount = 1;
+
+        minus.forEach(x => {
+            x.onclick = () => {
+                if (prevCount > 0)
+                    prevCount--;
+                count.forEach(y => {
+                    y.innerHTML = prevCount;
+                })
+            }
+        })
+
+        plus.forEach(x => {
+            x.onclick = () => {
+                prevCount++;
+                count.forEach(y => {
+                    y.innerHTML = prevCount;
+                })
+            }
+        })
     </script>
 </body>
 
