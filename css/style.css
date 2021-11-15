@@ -156,9 +156,6 @@ p {
 .nav.navbar-nav.pagination-lg a:hover {
   background-color: unset;
 }
-.nav.navbar-nav.pagination-lg li:hover {
-  background-color: #b4846c;
-}
 @media (max-width: 1200px) {
   .nav-bar {
     padding-top: 1vh;
