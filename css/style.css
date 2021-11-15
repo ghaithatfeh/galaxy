@@ -277,20 +277,16 @@ p {
   padding-bottom: 9vmin;
   margin-top: -1px;
 }
-.oreder-product {
-  background-image: none;
-  padding-top: 11vw;
-}
-@media (min-width: 1400px) {
-  .oreder-product {
-    padding-top: 11vw;
-  }
-}
 @media (max-width: 1200px) {
   .products {
     background-image: url(../images/product/background-sm.svg);
     background-size: 100%;
+    background-position-y: center;
   }
+}
+.oreder-product {
+  background-image: none;
+  padding-top: 10vw;
 }
 .products > .img-top {
   position: absolute;
@@ -527,7 +523,7 @@ input[type="email"] {
 
 /* start card */
 .card-page {
-  padding-top: 11vw;
+  padding-top: 10vw;
   padding-bottom: 6vmin;
   color: #683309;
 }
