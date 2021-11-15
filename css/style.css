@@ -7,7 +7,7 @@ body {
   background-color: #fcdec0;
   margin: 0;
 }
-.home-body{
+.home-body {
   background-image: url(../images/lines.svg);
   background-repeat: repeat-y;
   background-position-x: 10%;
@@ -125,8 +125,9 @@ p {
   z-index: 1;
   padding-top: 1%;
   background-color: #fcdec0;
+  transition: 0.5s;
 }
-.home-body .nav-bar{
+.home-body .nav-bar {
   background-image: url(../images/lines.svg);
   background-repeat: repeat-y;
   background-position-x: 10%;
@@ -151,6 +152,12 @@ p {
 }
 .nav.navbar-nav.pagination-lg a {
   margin: 10px 20px 5px;
+}
+.nav.navbar-nav.pagination-lg a:hover {
+  background-color: unset;
+}
+.nav.navbar-nav.pagination-lg li:hover {
+  background-color: #b4846c;
 }
 @media (max-width: 1200px) {
   .nav-bar {
@@ -681,9 +688,9 @@ input[type="email"] {
   padding-bottom: 9vmin;
   color: #7d5a50;
 }
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .product-page {
-  padding-top: 16vw;
+    padding-top: 16vw;
   }
 }
 .product-page h2 {
