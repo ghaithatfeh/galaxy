@@ -45,7 +45,7 @@ window.onscroll = () => {
         });
     }
     // about section
-    if (window.scrollY >= about.offsetTop - 200) {
+    if (window.scrollY >= about.offsetTop - 250) {
         navBar.style.backgroundColor = '#b4846c';
         trachIcone.style.fill = '#FCDEC0';
         personIcone.style.fill = '#FCDEC0';
