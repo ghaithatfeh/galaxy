@@ -30,6 +30,26 @@ p {
     margin-top: 30px;
   }
 }
+.special-btn {
+  color: #7d5a50;
+  font-size: calc(2vmin + 5px);
+  font-weight: bold;
+  margin-top: 1vw;
+  text-align: center;
+  padding: 2%;
+  border-radius: 6vw;
+  border: 0;
+  background-color: #fff;
+  box-shadow: -0.55vmin 0.55vmin 0 0 #7d5a50;
+}
+a.special-btn:hover {
+  color: #683310;
+}
+@media (max-width: 600px) {
+  .special-btn {
+    font-size: 2.7vmin;
+  }
+}
 /* end global rules */
 
 /* satrt sidebar */
@@ -334,26 +354,6 @@ p {
   color: #7d5a50;
   text-align: center;
 }
-.special-btn {
-  color: #7d5a50;
-  text-align: center;
-  margin-top: calc(1vw + 5px);
-  font-size: 2vmin;
-  font-weight: bold;
-  padding: 2%;
-  border-radius: 2vw;
-  border: 0;
-  background-color: #fff;
-  box-shadow: -4px 4px 0 0 #7d5a50;
-}
-a.special-btn:hover {
-  color: #683310;
-}
-@media (max-width: 600px) {
-  .special-btn {
-    font-size: calc(2vmin + 1px);
-  }
-}
 .arrows {
   margin: 40px 0;
 }
@@ -594,10 +594,10 @@ input[type="email"] {
   font-size: calc(2vmin + 5px);
   text-align: center;
   padding: 2%;
-  border-radius: 2vw;
+  border-radius: 6vw;
   border: 0;
   background-color: #fff;
-  box-shadow: -4px 4px 0 0 #7d5a50;
+  box-shadow: -0.55vmin 0.55vmin 0 0 #7d5a50;
 }
 .card-page .card-container .card .box > span {
   font-size: 12px;
@@ -670,10 +670,10 @@ input[type="email"] {
   font-size: calc(2vmin + 5px);
   font-weight: bold;
   padding: 3% 7%;
-  border-radius: 3vw;
+  border-radius: 6vmin;
   border: 0;
   background-color: #fff;
-  box-shadow: -4px 4px 0 0 #7d5a50;
+  box-shadow: -0.55vmin 0.55vmin 0 0 #7d5a50;
 }
 /* summary //////////////////////*/
 
@@ -740,21 +740,11 @@ input[type="email"] {
 }
 select.special-btn {
   margin-top: 0;
+  padding-left: 1.2vmin;
   font-weight: bolder;
 }
 select.special-btn * {
   text-align: left;
-}
-.product-page .quantity span {
-  margin-top: calc(1vw + 5px);
-  font-size: 2vmin;
-  font-weight: bolder;
-  padding: 2%;
-  border-radius: 2vw;
-  border: 0;
-  background-color: #fff;
-  box-shadow: -4px 4px 0 0 #7d5a50;
-  text-align: center;
 }
 @media (max-width: 600px) {
   .product-page .special-btn {
@@ -763,10 +753,6 @@ select.special-btn * {
   .product-page .quantity .special-btn {
     padding-top: 4%;
     padding-bottom: 4%;
-  }
-  .product-page .quantity span {
-    font-size: 3vmin;
-    padding: 4% 2%;
   }
   .product-page .select {
     font-size: 2vmin;
