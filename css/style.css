@@ -7,12 +7,6 @@ body {
   background-color: #fcdec0;
   margin: 0;
 }
-.lines-bg {
-  background-image: url(../images/lines.svg);
-  background-repeat: repeat-y;
-  background-position-x: 0;
-  background-size: 14%;
-}
 h1 {
   font: bold 3vw "Merienda";
 }
@@ -29,6 +23,17 @@ p {
     text-align: center;
     margin-top: 30px;
   }
+}
+.lines-bg::before {
+  content: "";
+  position: absolute;
+  width: 20vmin;
+  height: 100%;
+  background-image: url(../images/lines.svg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  top: 0;
+  opacity: 0.35;
 }
 .special-btn {
   color: #7d5a50;
@@ -111,13 +116,19 @@ a.special-btn:hover {
 /* end sidebar */
 
 /* start header */
-.icone a:last-child{
+.icone a:last-child {
   margin-left: 2vmin;
 }
 .icone a svg,
-.icone a img{
+.icone a img {
   width: 23%;
   height: 100%;
+}
+@media (max-width: 991px) and (min-width: 550px) {
+  .icone a svg,
+  .icone a img {
+    width: 17%;
+  }
 }
 #borger {
   cursor: pointer;
@@ -721,7 +732,7 @@ input[type="email"] {
   text-align: center;
   font-weight: bolder;
 }
-.product-page .order-btn{
+.product-page .order-btn {
   margin-top: 45px;
 }
 .product-page .card {

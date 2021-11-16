@@ -11,6 +11,21 @@
         body {
             background: #f2f2f2;
         }
+        .asd{
+            background-color: #eee;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        .asd::before {
+            content: "";
+            width: 100px;
+            height: 100vh;
+            /* background-color: red; */
+            background-image: url(images/coockie.svg);
+            position: absolute;
+            right: 0;
+        }
 
         .selectdiv {
             position: relative;
@@ -65,6 +80,7 @@
 </head>
 
 <body>
+    <div class="asd"></div>
     <div class="selectdiv ">
         <label>
             <select>
