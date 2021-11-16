@@ -41,7 +41,7 @@ window.onscroll = () => {
             x.style.fill = '#7D5A50'
         })
         links.forEach(x => {
-            x.style.color = '#502C1E'
+            x.style.color = '#7d5a50'
         });
     }
     // about section
@@ -73,7 +73,7 @@ window.onscroll = () => {
             x.style.fill = '#7D5A50'
         })
         links.forEach(x => {
-            x.style.color = '#502C1E'
+            x.style.color = '#7d5a50'
         });
     }
     // contact section
@@ -105,7 +105,7 @@ window.onscroll = () => {
             x.style.fill = '#7D5A50'
         })
         links.forEach(x => {
-            x.style.color = '#502C1E'
+            x.style.color = '#7d5a50'
         });
     }
 }

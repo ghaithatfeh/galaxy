@@ -91,6 +91,14 @@ p {
 /* end sidebar */
 
 /* start header */
+.icone a:last-child{
+  margin-left: 2vmin;
+}
+.icone a svg,
+.icone a img{
+  width: 23%;
+  height: 100%;
+}
 #borger {
   cursor: pointer;
 }
@@ -107,10 +115,15 @@ p {
   top: -90%;
 }
 .order-coockie-center {
-  position: fixed;
-  left: 0;
-  top: 50%;
   width: 20%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 1200px) {
+  .order-coockie-center {
+    width: 50%;
+  }
 }
 .nav-bar {
   position: fixed;
@@ -135,7 +148,8 @@ p {
 .nav.navbar-nav.pagination-lg a {
   margin: 10px 20px 5px;
 }
-.nav.navbar-nav.pagination-lg a:hover {
+.nav.navbar-nav.pagination-lg a:hover,
+.nav.navbar-nav.pagination-lg a:focus {
   background-color: unset;
 }
 @media (max-width: 1200px) {
@@ -269,7 +283,7 @@ p {
 .products {
   background-image: url(../images/product/background.svg);
   background-position-x: center;
-  background-position-y: 20vw;
+  background-position-y: 18vw;
   background-repeat: no-repeat;
   background-size: 70%;
   position: relative;
@@ -376,7 +390,7 @@ a.special-btn:hover {
 .lable * {
   font-size: 1vw;
 }
-.lable .select-div select{
+.lable .select-div select {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
@@ -523,6 +537,7 @@ input[type="email"] {
 
 /* start card */
 .card-page {
+  position: relative;
   padding-top: 10vw;
   padding-bottom: 6vmin;
   color: #683309;
@@ -664,6 +679,7 @@ input[type="email"] {
 
 /* start product-page */
 .product-page {
+  position: relative;
   padding-top: 12vw;
   padding-bottom: 9vmin;
   color: #7d5a50;
@@ -705,8 +721,11 @@ input[type="email"] {
   text-align: center;
   font-weight: bolder;
 }
+.product-page .order-btn{
+  margin-top: 45px;
+}
 .product-page .card {
-  padding: 45px 20px;
+  padding: 50px 20px;
 }
 .product-page .card-sm {
   padding: 20px 0;
