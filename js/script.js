@@ -73,7 +73,7 @@ window.onscroll = () => {
             x.style.fill = '#7D5A50'
         })
         links.forEach(x => {
-            x.style.color = '#7d5a50'
+            x.style.color = '#7D5A50'
         });
     }
     // contact section
