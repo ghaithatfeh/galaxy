@@ -163,7 +163,7 @@ a.special-btn:hover {
   z-index: 2;
   padding-top: 1%;
   background-color: #fcdec0;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 .nav-bar .container .row {
   display: flex;
